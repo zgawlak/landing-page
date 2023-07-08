@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    max-width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    flex: flex-start;
+}
+
+.links {
+    display: flex;
+    gap: 16px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.banner img {
+    max-width: 500px;
+}
+
+.container {
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.images img {
+    width: 250px;
+    border-radius: 5px;
+    border: 2px solid blue;
+}
