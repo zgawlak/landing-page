@@ -1,29 +1,30 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+    height: auto;
+    color: #040103;
+    background-color: #f3e2eb;
+    margin: 0;
+    padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.logo {
-    font-size: 24px;
-    color: #F9FAF8;
-}
-
-.top {
-    background-color: #1F2937;
-    padding: 50px 20%;
+.logo img {
+    width: 64px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #c1676b;
+    padding: 10px 20%;
 }
 
 .links {
@@ -35,9 +36,19 @@ header {
 .text p,
 footer,
 .round p {
-    font-size: 14px;
-    color: #E5E7EB;
+    font-size: 16px;
+    color: #fff;
 }
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: #aaa;
+}
+
 
 .banner {
     display: flex;
@@ -46,40 +57,46 @@ footer,
     gap: 32px;
     padding: 100px 0;
     flex-wrap: wrap;
+    background-color: #c1676b;
+    padding: 50px 20%;
 }
 
 .banner .text {
     flex: 4;
 }
 
-.banner .image{
+.banner .image {
     flex: 3;
 }
 
 .banner img {
-    min-width: 250px;
     max-width: 100%;
+    border-radius: 10px;
+    border: 1px solid #fff;
 }
 
 .hero-text {
     font-size: 48px;
     font-weight: 900;
-    color: #F9FAF8;
+    color: #f9faf8;
+}
+
+button {
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #c18f67;
+    color: #fff;
+}
+
+button:hover {
+    color: #aaa;
+    background-color: #ecdcd0;
+    cursor: pointer;
 }
 
 .banner button {
-    background-color: #3882F6;
     padding: 5px 25px;
     border: 1px solid transparent;
-    border-radius: 5px;
-    color: white;
-}
-
-.banner button:hover,
-.round button:hover {
-    color: #aaa;
-    background-color: #1d51a4;
-    cursor: pointer;
 }
 
 .container {
@@ -101,24 +118,31 @@ footer,
     padding: 50px 0 100px 0;
 }
 
-.images img {
-    width: 250px;
-    border-radius: 5px;
-    border: 2px solid blue;
-}
-
 .images p {
-    color: #333;
+    color: #1F2937;
     font-size: 16px;
 }
 
+.images img {
+    width: 250px;
+    border-radius: 5px;
+    border: 3px solid #c18f67;
+}
+
+.images img:hover {
+    opacity: 0.7;
+}
+
 .testimonials {
-    background-color: #E5E7EB;
+    background-color: #ecdcd0;
+    padding: 100px 25%;
+}
+
+.testimonials, footer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 100px 25%;
 }
 
 .quote {
@@ -130,7 +154,7 @@ footer,
 .quotee {
     margin-left: auto;
     font-size: 26px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .signup {
@@ -141,8 +165,8 @@ footer,
 }
 
 .round {
-    border: 1px solid #3882F6;
-    background-color: #3882F6;
+    border: 1px solid #c18f67;
+    background-color: #c18f67;
     width: 100%;
     border-radius: 5px;
     padding: 32px 10%;
@@ -158,24 +182,22 @@ footer,
 
 .big {
     font-size: 28px;
-    color: #FFF;
+    color: #fff;
 }
 
 .round button {
-    width: 100px;
+    width: 150px;
     height: 40px;
-    border-radius: 5px;
-    background-color: #3882F6;
-    border: 1px solid #FFF;
-    color: #fff;
+    border: 1px solid #fff;
     flex: none;
 }
 
 footer {
-    background-color: #1F2937;
-    text-align: center;
-    display: flex;
+    background-color: #c1676b;
+    text-align: auto;
     padding: 100px 0;
-    justify-content: center;
-    align-items: center;
+}
+
+footer a {
+    color: #ffffff;
 }
