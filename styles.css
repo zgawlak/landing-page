@@ -11,17 +11,13 @@ body {
 }
 
 .top {
-    padding: 50px 300px 0 300px;
     background-color: #1F2937;
+    padding: 50px 20%;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-}
-
-.logo {
-    flex: flex-start;
 }
 
 .links {
@@ -31,13 +27,24 @@ header {
 
 .banner {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 32px;
     padding: 100px 0;
+    flex-wrap: wrap;
+}
+
+.banner .text {
+    flex: 2;
+}
+
+.banner .image{
+    flex: 3;
+    min-width: 250px;
 }
 
 .banner img {
-    max-width: 500px;
+    max-width: 100%;
 }
 
 .container {
@@ -48,6 +55,8 @@ header {
     display: flex;
     justify-content: center;
     gap: 32px;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
 }
 
 .images img {
@@ -58,28 +67,42 @@ header {
 
 .testimonials {
     background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 100px 300px;
+    padding: 100px 20%;
 }
 
 .signup {
-    padding: 100px 400px;
+    padding: 100px 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .round {
     border: 1px solid blue;
+    width: 90%;
     border-radius: 5px;
-    padding: 32px 100px;
+    padding: 32px 10%;
     display: flex;
     justify-content: space-between;
 }
 
-button {
-    flex-shrink: 0;
+.round .desc {
+    flex: auto;
+}
+
+.round button {
+    flex: 0;
 }
 
 footer {
     background-color: #1F2937;
-    padding: 100px 300px;
     text-align: center;
+    display: flex;
+    padding: 100px 0;
+    justify-content: center;
+    align-items: center;
 }
