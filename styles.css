@@ -67,6 +67,7 @@ footer,
 
 .banner .image {
     flex: 3;
+    min-width: 200px;
 }
 
 .banner img {
